@@ -1,0 +1,33 @@
+<app-nav></app-nav>
+<div class='container p-5'>
+  <div class='row'>
+    <div class='col my-5'>
+
+      <div class='d-flex justify-content-between'>
+        <h2 class='maven-pro-font'>Episodes</h2>
+      </div>
+
+      <div class='my-5'>
+        <table class="table">
+            <thead class='play-bold fs-5'>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Air Date</th>
+                <th scope="col">Episode</th>
+                </tr>
+            </thead>
+            <tbody class='play-regular fs-6'>
+              @for(episode of episodes$ | async; track $index) {
+                <tr>
+                  <th>{{episode.id}}</th>
+                  <td>{{episode.name}}</td>
+                  <td>{{episode.air_date}}</td>
+                  <td>{{episode.episode}}</td>
+                </tr>
+              }
+            </tbody>
+        </table>
+    </div>
+  </div>
+</div>
