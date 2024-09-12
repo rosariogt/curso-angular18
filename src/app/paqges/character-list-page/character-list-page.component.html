@@ -1,0 +1,8 @@
+<!-- 2.  Componente con @defer, @placeholder y @loading -->
+@defer {
+  <app-character-list></app-character-list>
+} @placeholder (minimum 900ms) {
+  <app-loading></app-loading>
+} @loading(minimum 2s) {
+  <span>Loading...</span>
+}
