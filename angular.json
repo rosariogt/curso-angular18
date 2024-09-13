@@ -101,7 +101,7 @@
           "defaultConfiguration": "production",
           "configurations": {
             "production": {
-              "baseHref": "https://rosariogt/curso-angular18/",
+              "baseHref": "https://rosariogt.github.io/curso-angular18/",
               "repo": "https://github.com/rosariogt/curso-angular18"
             }
           }
