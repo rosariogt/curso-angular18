@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
-import { NavComponent } from "../../paqges/nav/nav.component";
+import { NavComponent } from "../../pages/nav/nav.component";
 import { MatListModule } from '@angular/material/list';
 import { AsyncPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';

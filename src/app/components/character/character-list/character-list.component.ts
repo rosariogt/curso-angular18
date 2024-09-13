@@ -5,7 +5,7 @@ import { Character } from '../../../model/character.model';
 import { map, Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
-import { NavComponent } from "../../../paqges/nav/nav.component";
+import { NavComponent } from "../../../pages/nav/nav.component";
 
 @Component({
   selector: 'app-character-list',

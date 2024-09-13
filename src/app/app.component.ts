@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CharacterListComponent } from './components/character/character-list/character-list.component';
-import { LandingComponent } from "./paqges/landing/landing.component";
+import { LandingComponent } from "./pages/landing/landing.component";
 import {
   BreakpointObserver,
   Breakpoints,

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
-import { NavComponent } from "../../../paqges/nav/nav.component";
+import { NavComponent } from "../../../pages/nav/nav.component";
 import { CharacterService } from '../../../services/character.service';
 import { Character } from '../../../model/character.model';
 import { LoadingComponent } from "../../loading/loading.component";
