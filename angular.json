@@ -95,6 +95,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "defaultConfiguration": "production",
+          "configurations": {
+            "production": {
+              "baseHref": "https://rosariogt/curso-angular18",
+              "repo": "https://github.com/rosariogt/curso-angular18"
+            }
+          }
         }
       }
     }
