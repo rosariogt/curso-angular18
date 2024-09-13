@@ -1,0 +1,28 @@
+<app-nav></app-nav>
+<div class='container p-5'>
+  <div class='row'>
+    <div class='col'>
+      <div class='d-flex justify-content-between'>
+        <h2 class='maven-pro-font'>Characters</h2>
+      </div>
+
+      <div class='my-5'>
+        <div class="d-flex row row-cols-1 row-cols-md-5 justify-content-between gap-5">
+          @for(character of characters$ | async; track $index) {
+          <div class="card">
+            <img src="{{character.image}}" class="rounded" alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title text-center play-bold ">{{character.name}}</h5>
+              <div class="d-grid gap-2">
+                <button class="btn bg-blue-button text-white" (click)="showCharacter(character.id)">
+                    Ver
+                </button>
+              </div>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+  </div>
+</div>
+</div>
