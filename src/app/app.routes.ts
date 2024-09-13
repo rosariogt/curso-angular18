@@ -1,9 +1,6 @@
 import { Routes } from '@angular/router';
-import { CharacterListComponent } from './components/character/character-list/character-list.component';
-import { CharacterComponent } from './components/character/character/character.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { CharacterListPageComponent } from './pages/character-list-page/character-list-page.component';
-import { EpisodeListPageComponent } from './pages/episode-list-page/episode-list-page.component';
+
 
 export const routes: Routes = [
   {
@@ -13,14 +10,19 @@ export const routes: Routes = [
   {
     path: 'characters',
     pathMatch: 'full',
-    loadComponent: () => import('./pages/character-list-page/character-list-page.component').then((m) => m.CharacterListPageComponent)
+    loadComponent: () => import('./pages/character-list-page/character-list-page.component').then((m) => m.CharacterListPageComponent),
+    data: { preload: true }
   },
   {
     path: 'character',
-    component: CharacterComponent
+    pathMatch: 'full',
+    loadComponent: () => import('./components/character/character/character.component').then((m) => m.CharacterComponent),
+    data: { preload: true }
   },
   {
     path: 'episodes',
-    component: EpisodeListPageComponent
+    pathMatch: 'full',
+    loadComponent: () => import('./pages/episode-list-page/episode-list-page.component').then((m) => m.EpisodeListPageComponent),
+    data: { preload: true }
   }
 ];
