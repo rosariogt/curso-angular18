@@ -1,1 +1,0 @@
-import{a}from"./chunk-SJRIMV4F.js";import"./chunk-UOUB6NK5.js";import"./chunk-TTE2DZNV.js";import"./chunk-YU5F3W2U.js";import"./chunk-V5ETF6HC.js";import"./chunk-77E73LA2.js";export{a as CharacterComponent};
