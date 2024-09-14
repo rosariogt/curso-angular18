@@ -4,8 +4,9 @@ import { LandingComponent } from './pages/landing/landing.component';
 
 export const routes: Routes = [
   {
-    path: 'landing',
-    component: LandingComponent
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'characters'
   },
   {
     path: 'characters',
