@@ -7,14 +7,14 @@
       </div>
 
       <div class='my-5'>
-        <div class="d-flex row row-cols-1 row-cols-md-5 justify-content-between gap-5">
+        <div class="cards d-flex row row-cols-md-4 gap-5">
           @for(character of characters$ | async; track $index) {
           <div class="card">
             <img src="{{character.image}}" class="rounded" alt="..."/>
             <div class="card-body">
               <h5 class="card-title text-center play-bold ">{{character.name}}</h5>
               <div class="d-grid gap-2">
-                <button class="btn bg-blue-button text-white" (click)="showCharacter(character.id)">
+                <button class="btn bg-blue-button fw-medium" (click)="showCharacter(character.id)">
                     Ver
                 </button>
               </div>
